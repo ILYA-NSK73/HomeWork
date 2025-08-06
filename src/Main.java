@@ -65,8 +65,8 @@ public class Main {
         var totalWorker = totalHours / worker1;
         System.out.println("Всего работник в комании " + totalWorker +   " человек");
         totalWorker = totalWorker + 94;
-        System.out.println("Если в комании работает " + totalWorker + " человека" );
-        var totalHours1 = totalHours /  totalWorker;
+        System.out.println("Если в комании работает " + totalWorker + " человека");
+        var totalHours1 = totalHours / totalWorker;
         System.out.println("то всего " + totalHours1 + " по часа работы может быть поделено между сотрудниками");
 
 
