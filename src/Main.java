@@ -30,7 +30,7 @@ public class Main {
         double i = 2.786;
         System.out.println("Значение переменной " + i + " будет double");
         int j = 569;
-        System.out.println("Значение переменной " + j + " будет ing");
+        System.out.println("Значение переменной " + j + " будет int");
         short k = -159;
         System.out.println("Значение переменной " + k + " будет short");
         short l = 27897;
@@ -47,7 +47,7 @@ public class Main {
         System.out.println("Всего учеников на 3 класса " + totalStudents + " человек");
         short totalSheets = 480;
         System.out.println("Учителя закупили на 3 класса " + totalSheets + " листов бумаги");
-        byte sheets = (byte) (totalSheets / totalStudents);
+        int sheets = totalSheets / totalStudents;
         System.out.println("На каждого ученика расчитано " + sheets + " листов бумаги");
 
         System.out.println("Задача №4");
