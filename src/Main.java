@@ -3,30 +3,28 @@ public class Main {
         System.out.println("Task #1");
         int age = 24;
         if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + " лет, то он совершеннолетний");
+            System.out.println("Если возраст человека равен " + age + " года, то он совершеннолетний");
         } else {
-            System.out.println("Если возраст человека равен " + age + " лет, то он несовершеннолетний, и стоит немного подождать");
+            System.out.println("Если возраст человека равен " + age + " года, то он несовершеннолетний, и стоит немного подождать");
         }
 
         System.out.println("Task #2");
         int temperature = 12;
         if (temperature <= 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-        } else {
+        }
             if (temperature >= 5) {
                 System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
             }
-        }
+
 
         System.out.println("Task #3");
         int speed = 90;
         if (speed >= 60) {
             System.out.println("Если скорость " + speed + " км/ч то придётся заплатить");
         } else {
-            if (speed <= 60) {
-                System.out.println("Если скорость " + speed + " км/ч то можно ехать спокойно");
+            System.out.println("Если скорость " + speed + " км/ч то можно ехать спокойно");
             }
-        }
 
         System.out.println("Task #4");
         int year = 10;
@@ -41,8 +39,8 @@ public class Main {
         }
 
         System.out.println("Task #5");
-        int year1 = 12;
-        if (year1 < 5) {
+        int year1 = 4;
+        if (year1 <= 5) {
             System.out.println("Если возраст ребёнка равен " + year1 + " то ему нельзя кататься на аттракционе");
         } else if (year1 > 5 && year1 <= 14) {
             System.out.println("Если возраст ребёнка равен " + year1 + " то ему можно кататься на аттракционе в сопровождении");
@@ -71,6 +69,5 @@ public class Main {
         } else if (three > one && three > two) {
             System.out.println("Третье число самое большое");
         }
-
     }
 }
