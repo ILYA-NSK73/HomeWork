@@ -11,26 +11,26 @@ public class Main {
         System.out.println("Task #2");
         int clientDeviceYear = 2010;
         if (clientOC == 0) {
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегчённую версию приложения для IOS по ссылке");
-            } else {
+            if (clientDeviceYear >= 2015) {
                 System.out.println("Установите версию приложения для IOS по ссылке");
-            }
-        }
-        if (clientOC == 1) {
-            if (clientDeviceYear < 2015) {
-                System.out.println("Установите облегчённую версию приложения для Android по ссылке");
             } else {
-                System.out.println("Установите версию приложения для Android по ссылке");
+                System.out.println("Установите облегчённую версию приложения для IOS по ссылке");
             }
+        } else if (clientOC == 1) {
+            if (clientDeviceYear >= 2015)
+                System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Установите облегчённую версию приложения для Android по ссылке");
         }
 
         System.out.println("Task #3");
-        int year = 2028;
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-            System.out.println(year + " Год является високосным");
+        int year = 2027;
+        if (year <= 1584) {
+            System.out.println(year + " год не поддерживается (должен быть больше 1584)");
+        } else if ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0)) {
+            System.out.println(year + " год является високосным");
         } else {
-            System.out.println(year + " Год не является високосным");
+            System.out.println(year + " год не является високосным");
         }
 
         System.out.println("Task #4");
@@ -74,5 +74,6 @@ public class Main {
             default:
                 System.out.println("Такого месяца не существует");
         }
+
     }
 }
