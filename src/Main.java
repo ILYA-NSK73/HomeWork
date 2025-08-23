@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Task #8");
         int money = 29000;
         int total = 0;
-        for (int i = 0; i <= 12; i++) {
+        for (int i = 1; i <= 12; i++) {
             total = total + money;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
@@ -39,7 +39,7 @@ public class Main {
         System.out.println("Task #9");
         int money1 = 29000;
         int total1 = 0;
-        for (int i = 0; i <= 12; i++) {
+        for (int i = 1; i <= 12; i++) {
             total1 = total1 + total1 / 100;
             total1 = total1 + money1;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total1 + " рублей");
