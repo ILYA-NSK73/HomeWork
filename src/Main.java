@@ -30,7 +30,7 @@ public class Main {
 
         System.out.println("Task #8");
         int money = 29000;
-        int total = 0;
+        int total = 1;
         for (int i = 1; i <= 12; i++) {
             total = total + money;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
@@ -38,7 +38,7 @@ public class Main {
 
         System.out.println("Task #9");
         int money1 = 29000;
-        int total1 = 0;
+        int total1 = 1;
         for (int i = 1; i <= 12; i++) {
             total1 = total1 + total1 / 100;
             total1 = total1 + money1;
@@ -50,6 +50,93 @@ public class Main {
         for (int i = 1; i <= 10; i++)
             System.out.println(number + " * " + i + " = " + number * i);
 
+// Циклы. Урок №2
+
+        System.out.println("Task #1");
+        int targetAmount = 2_459_000;
+        int monthlyDeposit = 15_000;
+        int saving = 0;
+        int month = 0;
+        while (saving < targetAmount) {
+            month++;
+            saving += monthlyDeposit;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + saving + " рублей");
+        }
+
+        System.out.println("Task #2");
+        int i = 1;
+        while (i <= 10) {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+
+        for (i = 10; i >= 1; i--) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        System.out.println("Task #3");
+        int population = 12_000_000;
+        int birthRate = 17;     // Рождаемость на 1000 человек
+        int deathRate = 8;      // Смертность на 1000 человек
+        for (int year = 1; year <= 10; year++) {
+            population += (population / 1000) * (birthRate - deathRate);
+            System.out.printf("Год %2d, численность населения составляет %d\n", year, population);
+        }
+
+        System.out.println("Task #4");
+        double savingsVasily = 15_000;
+        double targetVasily = 12_000_000;
+        double monthlyInterest = 0.07;
+        month = 0;
+
+        while (savingsVasily < targetVasily) {
+            month++;
+            savingsVasily *= (1 + monthlyInterest);
+            System.out.printf("Месяц %3d, сумма накоплений равна %11.2f рублей\n", month, savingsVasily);
+        }
+
+        System.out.println("Task #5");
+        savingsVasily = 15_000;
+        month = 0;
+
+        while (savingsVasily < targetVasily) {
+            month++;
+            savingsVasily *= (1 + monthlyInterest);
+            if (month % 6 == 0) {
+                System.out.printf("Месяц %3d, сумма накоплений равна %11.2f рублей\n", month, savingsVasily);
+            }
+        }
+
+        System.out.println("Task #6");
+        savingsVasily = 15_000;
+        int years = 9;
+        int totalMonths = years * 12;
+
+        for (month = 1; month <= totalMonths; month++) {
+            savingsVasily *= (1 + monthlyInterest);
+            if (month % 6 == 0) {
+                System.out.printf("Месяц %3d, сумма накоплений равна %12.2f рублей\n", month, savingsVasily);
+            }
+        }
+
+        System.out.println("Task #7");
+        int firstFriday = 5;
+        for (int day = firstFriday; day <= 31; day += 7) {
+            System.out.printf("Сегодня пятница, %2d-е число. Необходимо подготовить отчет%n", day);
+        }
+
+        System.out.println("Task #8");
+        int currentYear = 2025;
+        int startYear = currentYear - 200;
+        int endYear = currentYear + 100;
+
+        for (int year = startYear; year <= endYear; year++) {
+            if (year % 79 == 0) {
+                System.out.println(year);
+            }
+        }
     }
 }
 
