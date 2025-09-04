@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Task #1");
@@ -137,6 +140,66 @@ public class Main {
                 System.out.println(year);
             }
         }
+
+        // Массивы. Урок #3
+
+        System.out.println("Task #1");
+
+        int[] first = new int[3];
+        first[0] = 1;
+        first[1] = 2;
+        first[2] = 3;
+        System.out.println("Массив цифр: ");
+        for (int num : first) {
+            System.out.println(num + " ");
+        }
+
+        double[] doubleArray = {1.57, 7.654, 9.986};
+        System.out.println("Массив дробных чисел ");
+        for (double num : doubleArray) {
+            System.out.println(num + " ");
+        }
+
+        System.out.println("Task #2");
+        for (int z = 0; z < first.length; z++) {
+            if (z > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(first[z]);
+        }
+        System.out.println();
+
+        for (int z = 0; z < doubleArray.length; z++) {
+            if (z > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(doubleArray[z]);
+        }
+        System.out.println();
+
+        System.out.println("Task #3");
+        for (int z = first.length - 1; z >= 0; z--) {
+            System.out.print(first[z]);
+            if (z > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int z = doubleArray.length - 1; z >= 0; z--) {
+            System.out.print(doubleArray[z]);
+            if (z > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        System.out.println("Task #4");
+        for (int z = 0; z < first.length; z++) {
+            if (first[z] % 2 != 0) {
+                first[z] += 1;
+            }
+        }
+        System.out.print(Arrays.toString(first) + " ");
     }
 }
-
