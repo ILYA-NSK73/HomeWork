@@ -160,6 +160,8 @@ public class Main {
             System.out.println(num + " ");
         }
 
+        int [] freet = {124, 256, 488};
+
         System.out.println("Task #2");
         for (int z = 0; z < first.length; z++) {
             if (z > 0) {
@@ -175,6 +177,15 @@ public class Main {
             }
             System.out.print(doubleArray[z]);
         }
+        System.out.println();
+
+        for (int z = 0; z < freet.length; z++) {
+            if (z > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(freet[z]);
+        }
+
         System.out.println();
 
         System.out.println("Task #3");
