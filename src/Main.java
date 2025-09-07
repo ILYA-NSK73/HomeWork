@@ -160,7 +160,7 @@ public class Main {
             System.out.println(num + " ");
         }
 
-        int [] freet = {124, 256, 488};
+        int[] freet = {124, 256, 488};
 
         System.out.println("Task #2");
         for (int z = 0; z < first.length; z++) {
@@ -212,5 +212,51 @@ public class Main {
             }
         }
         System.out.print(Arrays.toString(first) + " ");
+        System.out.println();
+
+        // Массивы 2
+
+        System.out.println("Task #1");
+
+        int[] spending = {2000, 3000, 5500, 5600, 9000};
+        int sum = 0;
+        for (int expenses : spending) {
+            sum += expenses;
+        }
+        System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+
+        System.out.println("Task #2");
+
+        int[] expenses = {2000, 3000, 5500, 5600, 9000};
+        int minExpenses = expenses[0];
+        int maxExpenses = expenses[0];
+
+        for (int expense : expenses) {
+            if (expense < minExpenses) {
+                minExpenses = expense;
+            }
+            if (expense > maxExpenses) {
+                maxExpenses = expense;
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minExpenses + " рублей");
+        System.out.println("Максимальная сумма трат за неделю составила " + maxExpenses + " рублей");
+
+        System.out.println("Task #3");
+
+        int[] expenses1 = {2000, 3000, 5500, 5600, 9000};
+        int full = 0;
+        for (int expense : expenses1) {
+            full += expense;
+        }
+        double average = (double) full / expenses1.length;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
+
+        System.out.println("Task #4");
+
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int z = reverseFullName.length - 1; z >= 0; z--) {
+            System.out.print(reverseFullName[z]);
+        }
     }
 }
