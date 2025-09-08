@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -254,10 +253,8 @@ public class Main {
 
         System.out.println("Task #4");
 
-        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int name = reverseFullName.length - 1; name >= 0; name--) {
-            System.out.print(reverseFullName[name]);
-        }
+        char[] reverseFullName = {'I', 'v', 'a', 'n', 'o', 'v', ' ', 'I', 'v', 'a', 'n'};
+        System.out.println(reverseFullName);
         System.out.println();
 
         // Строки.
@@ -279,12 +276,8 @@ public class Main {
         System.out.println("Task #3");
 
         String fullName2 = "Иванов Семён Семёнович";
-        String fullName3 = fullName2.replace('ё' , 'е');
+        String fullName3 = fullName2.replace('ё', 'е');
         System.out.println("Данные Ф. И. О. сотрудника — " + fullName3);
-
-
-
-
 
 
     }
