@@ -9,5 +9,11 @@ public class Main {
 
         System.out.println("Книга: " + book1.getName() + " - Автор " + author1.getFirstName() + ". Год издания " + book1.getPublicationYear());
         System.out.println("Книга: " + book2.getName() + " - Автор " + author2.getFirstName() + ". Год издания " + book2.getPublicationYear());
+
+        System.out.println(book1.equals(book1));
+        System.out.println(book1);
+
+        System.out.println(book2.equals(book2));
+        System.out.println(book2);
     }
 }
