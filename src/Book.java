@@ -29,7 +29,7 @@ public class Book {
 
     @Override
     public String toString ()  {
-        return "Книга: " + name + ", Автор: " + author + ", Год публикации: " + publicationYear;
+        return "Книга: " + name + ", Автор: " + author.toString() + ", Год публикации: " + publicationYear;
     }
 
     @Override
